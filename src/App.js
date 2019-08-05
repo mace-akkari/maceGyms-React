@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+//import Timetable from './Timetable';
+
+
+const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+const HOURS = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+const columnHeaders = ['', ...DAYS].map(days => <th key={days}>{days}</th>);
+
+const headers = (heading) => <><td>{heading}</td>{DAYS.map(days => (<td key={days}></td>))}</>
+
+const rows = HOURS.map(hours => (<tr key={hours}>{headers(hours + `:00`)}</tr>));
 
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <h1>Mace Gyms</h1>
+        <h2>Time Table</h2>
+        <table className="time-table">
+          <thead>
+            <tr>{columnHeaders}</tr>
+          </thead>
+          <tbody>
+            {rows}
+          </tbody>
+        </table>
+      </div>
+  //  <Timetable days={DAYS} hours={HOURS} />  
   );
 }
 
