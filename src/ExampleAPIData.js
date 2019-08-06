@@ -1,40 +1,39 @@
 const CLASSES = [
     {
-        Time: 7,
-        Day: 1,
-        Class: "Yoga",
-        End: 8,
-        Instructor: "Maja"
+        startTime: 7,
+        day: 1,
+        description: "Yoga",
+        endTime: 8,
+        instructor: "Maja"
+    },
+    {
+        startTime: 7,
+        day: 0,
+        description: "Yoga",
+        endTime: 8,
+        instructor: "Maja"
 
     },
     {
-        Time: 7,
-        Day: 0,
-        Class: "Yoga",
-        End: 8,
-        Instructor: "Maja"
-
+        startTime: 9,
+        day: 4,
+        description: "yoga",
+        endTime: 11,
+        instructor: "Maja"
     },
     {
-        Time: 9,
-        Day: 4,
-        Class: "yoga",
-        End: 11,
-        Instructor: "Maja"
+        startTime: 7,
+        day: 3,
+        description: "Boxing",
+        endTime: 8,
+        instructor: "Mace"
     },
     {
-        Time: 7,
-        Day: 3,
-        Class: "Boxing",
-        End: 8,
-        Instructor: "Mace"
-    },
-    {
-        Time: 12,
-        Day: 7,
-        Class: "yogalaties",
-        End: 2,
-        Instructor: "Pat"
+        startTime: 12,
+        day: 7,
+        description: "yogalaties",
+        endTime: 2,
+        instructor: "Pat"
     },
 
 ];
