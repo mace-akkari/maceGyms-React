@@ -1,6 +1,6 @@
-import React from 'react';
+import React , { useEffect } from 'react';
 import './App.css';
-//import Timetable from './Timetable';
+import { getClasses } from './Timetable';
 
 
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -13,6 +13,9 @@ const headers = (heading) => <><td>{heading}</td>{DAYS.map(days => (<td key={day
 const rows = HOURS.map(hours => (<tr key={hours}>{headers(hours + `:00`)}</tr>));
 
 function App() {
+  useEffect(()=> {
+    getClasses().then((days) => {console.log(days)})
+  }, []);
   return ( 
     <div className="App">
         <h1>Mace Gyms</h1>
@@ -26,8 +29,8 @@ function App() {
           </tbody>
         </table>
       </div>
-  //  <Timetable days={DAYS} hours={HOURS} />  
+   //<Timetable days={DAYS} hours={HOURS} /> 
   );
-}
+ }
 
 export default App;
