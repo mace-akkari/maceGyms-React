@@ -8,10 +8,16 @@ const getAppointment = (day, hour, appointments) => {
 
 const columnHeaders = (days) => ['', ...days].map(day => <th key={day}>{day}</th>);
 
+const slot = (appointment) => (
+  <>
+    <h5>{appointment.description}</h5>
+    <p>{appointment.instructor}</p>
+  </>
+)
 const columns = (days, hour, appointments) => {
   const getDay = (day, index) => {
     const appointment = getAppointment(index, hour, appointments);
-    return (<td key={day}>{ appointment ? appointment.description : null }</td>)
+    return (<td key={day}>{ appointment ? slot(appointment) : null }</td>)
   }
   return (
     <>
