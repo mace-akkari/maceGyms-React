@@ -1,15 +1,25 @@
 html {
-  background-color: lightskyblue;
+  background-color: rgb(219, 216, 216);
 }
 
 .App {
   text-align: center;
 }
 .time-table{
-  border: 5px solid black;
+  border: 5px solid rgb(0, 0, 0);
   margin: auto;
-  background-color: white;
+  background-color: rgb(220, 221, 221);
   font-size: 20px;
+}
+
+.time-table p {
+  font-size: 13px;
+  padding: 3px;
+  margin: 5px;
+}
+
+th {
+  padding: 6px 0px;
 }
 
 th:first-child, td:first-child{
