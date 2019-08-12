@@ -12,7 +12,7 @@ const slot = (appointment) => (
   <>
     <h5>{appointment.description}</h5>
     <p>{`Instructor: ${appointment.instructor}`}</p>
-    <p>{`Time: ${appointment.startTime} - ${appointment.endTime}`}</p>
+    <p>{`Duration: ${appointment.endTime - appointment.startTime} hour(s)`}</p>
   </>
 )
 const columns = (days, hour, appointments) => {
