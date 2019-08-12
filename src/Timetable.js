@@ -11,7 +11,8 @@ const columnHeaders = (days) => ['', ...days].map(day => <th key={day}>{day}</th
 const slot = (appointment) => (
   <>
     <h5>{appointment.description}</h5>
-    <p>{appointment.instructor}</p>
+    <p>{`Instructor: ${appointment.instructor}`}</p>
+    <p>{`Time: ${appointment.startTime} - ${appointment.endTime}`}</p>
   </>
 )
 const columns = (days, hour, appointments) => {
