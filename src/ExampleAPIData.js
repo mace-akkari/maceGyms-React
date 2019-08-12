@@ -19,7 +19,7 @@ const CLASSES = [
     {
         startTime: 9,
         day: 4,
-        description: "yoga",
+        description: "Yoga",
         endTime: 11,
         instructor: "Maja"
     },
@@ -32,9 +32,9 @@ const CLASSES = [
     },
     {
         startTime: 12,
-        day: 7,
-        description: "yogalaties",
-        endTime: 2,
+        day: 6,
+        description: "Yogalaties",
+        endTime: 14,
         instructor: "Pat"
     },
 
