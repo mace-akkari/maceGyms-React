@@ -33,9 +33,6 @@ const rows = (days, hours, appointments) => hours.map(hour =>
 export const Timetable = (props) => {
   const { days, hours, appointments } = props
   return (
-    <div className="App">
-      <h1>Mace Gyms</h1>
-      <h2>Time Table</h2>
       <table className="time-table">
         <thead>
           <tr>{columnHeaders(days)}</tr>
@@ -44,6 +41,4 @@ export const Timetable = (props) => {
           {rows(days, hours, appointments)}
         </tbody>
       </table>
-    </div>
-  );
-};
+  )};
