@@ -37,6 +37,30 @@ const CLASSES = [
         endTime: 14,
         instructor: "Pat"
     },
+    {
+        startTime: 8,
+        day: 2,
+        description: "Spin",
+        endTime: 8,
+        instructor: "Bob"
+
+    },
+    {
+        startTime: 10,
+        day: 5,
+        description: "Zumba",
+        endTime: 11.5,
+        instructor: "Afreido"
+
+    },
+    {
+        startTime: 13,
+        day: 6,
+        description: "Yoga",
+        endTime: 14,
+        instructor: "Maja"
+
+    },
 
 ];
 
