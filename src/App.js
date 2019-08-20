@@ -22,8 +22,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        
-        <Timetable days={DAYS} hours={HOURS} appointments={appointments} />
+
+
+
+        <Route path="/timetable" render={() =>
+          <Timetable days={DAYS} hours={HOURS} appointments={appointments} />} />
       </div>
     </BrowserRouter>
   );
