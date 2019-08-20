@@ -29,11 +29,14 @@ const columns = (days, hour, appointments) => {
 }
 
 const rows = (days, hours, appointments) => hours.map(hour =>
-   (<tr key={hour}>{columns(days, hour, appointments)}</tr>));
+  (<tr key={hour}>{columns(days, hour, appointments)}</tr>));
 
 export const Timetable = (props) => {
   const { days, hours, appointments } = props
   return (
+    <div>
+      <h1>Mace Gyms</h1>
+      <h2>Time Table</h2>
       <table className="time-table">
         <thead>
           <tr>{columnHeaders(days)}</tr>
@@ -42,4 +45,6 @@ export const Timetable = (props) => {
           {rows(days, hours, appointments)}
         </tbody>
       </table>
-  )};
+    </div>
+  )
+};
