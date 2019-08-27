@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Home extends Component {    
-  
-  render() {
-    return (
-      <div className="main-content home">
+const Home = () => (
+      <div className="main-content">
         <h2>Welcome to Mace Gyms</h2>
         <p>For a fantastic gym in Balham, visit Mace Gyms. Ideally located in south-west London, it will cover all of your health and fitness needs.</p>
         <p>Located only a two-minute walk from Tooting Bec Tube station and a ten-minute walk from Balham train station, 
@@ -17,8 +14,6 @@ class Home extends Component {
           All of our staff are helpful and are highly-trained instructors, so come and talk to us about your fitness goals today.</p>
       </div>
 
-    );
-  }
-}
+);
 
 export default Home;
