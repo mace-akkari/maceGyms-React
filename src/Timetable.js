@@ -18,7 +18,7 @@ const slot = (appointment) => (
 const columns = (days, hour, appointments) => {
   const getDay = (day, index) => {
     const appointment = getAppointment(index, hour, appointments);
-    return (<td key={day}>{appointment ? slot(appointment) : null}</td>)
+    return (<td className={appointment ? 'appointment': null} key={day}>{appointment ? slot(appointment) : null}</td>)
   }
   return (
     <>
