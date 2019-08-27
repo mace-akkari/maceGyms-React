@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Teachers = () => (
-    <div className="Teachers">
+    <div className="Teachers-section">
     <h2>Our awsome instructors</h2>
     <p>For a fantastic gym in Balham, visit Mace Gyms. Ideally located in south-west London, it will cover all of your health and fitness needs.</p>
     <p>Located only a two-minute walk from Tooting Bec Tube station and a ten-minute walk from Balham train station, 
