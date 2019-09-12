@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Classes = () => (
-    <div className="Classes-section">
+    <div className="Classes-section content">
     <h2>What do we offer</h2>
     
     <h4>Yoga</h4>
