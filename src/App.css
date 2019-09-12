@@ -31,5 +31,9 @@ td {
 }
 
 td:nth-of-type(n+2):not(.appointment) {
-  background-color: lightslategrey;
+  background-color: #778899;
+}
+
+.content {
+  margin-top: 40px;
 }
