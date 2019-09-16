@@ -18,7 +18,7 @@ const slot = (appointment) => (
 const columns = (days, hour, appointments) => {
   const getDay = (day, index) => {
     const appointment = getAppointment(index, hour, appointments);
-    return (<td key={day}>{appointment ? slot(appointment) : null}</td>)
+    return (<td className={appointment ? 'appointment': null} key={day}>{appointment ? slot(appointment) : null}</td>)
   }
   return (
     <>
@@ -29,11 +29,14 @@ const columns = (days, hour, appointments) => {
 }
 
 const rows = (days, hours, appointments) => hours.map(hour =>
-   (<tr key={hour}>{columns(days, hour, appointments)}</tr>));
+  (<tr key={hour}>{columns(days, hour, appointments)}</tr>));
 
 export const Timetable = (props) => {
   const { days, hours, appointments } = props
   return (
+    <div className='content'>
+      <h1>Mace Gyms</h1>
+      <h2>Time Table</h2>
       <table className="time-table">
         <thead>
           <tr>{columnHeaders(days)}</tr>
@@ -42,4 +45,6 @@ export const Timetable = (props) => {
           {rows(days, hours, appointments)}
         </tbody>
       </table>
-  )};
+    </div>
+  )
+};

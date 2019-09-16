@@ -41,7 +41,7 @@ const CLASSES = [
         startTime: 8,
         day: 2,
         description: "Spin",
-        endTime: 8,
+        endTime: 9,
         instructor: "Bob"
 
     },
