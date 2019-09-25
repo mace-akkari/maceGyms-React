@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import './App.css';
+import './css/App.css';
 
-import Nav from './Nav';
-import Home from './Homepage';
-import Teachers from './Teachers';
-import TimeTablePage from './TimeTablePage';
-import Courses from './Classes';
+import Nav from './pages/Nav';
+import Home from './pages/Homepage';
+import Teachers from './pages/Teachers';
+import TimeTablePage from './pages/TimeTablePage';
+import Courses from './pages/Classes';
 
 
 
