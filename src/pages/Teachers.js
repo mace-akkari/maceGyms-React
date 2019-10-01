@@ -1,11 +1,12 @@
 import React from 'react';
+import { Page } from './Page';
 
 const Teachers = () => (
-    <div className="Teachers-section content">
-    <h2>Our awsome instructors</h2>
+
+  <Page title="Our awesome instructors">
     <h4>Pat</h4>
     <img src=""></img>
-    <p>Pat is our most senior Yohalaties teacher, with many years experience he 
+    <p>Pat is our most senior Yohalaties teacher, with many years experience he
       will make sure no matter your level, you will feel cofortable.</p>
     <h4>Maja</h4>
     <img></img>
@@ -17,8 +18,8 @@ const Teachers = () => (
     <h4>Bob</h4>
     <img></img>
     <p></p>
-  </div>
+  </Page>
 
-      );
+);
 
 export default Teachers 

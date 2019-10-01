@@ -1,4 +1,5 @@
 import React from 'react';
+import { Page } from './Page';
 
 const getAppointment = (day, hour, appointments) => {
   return appointments.find((appointment) => {
@@ -18,7 +19,7 @@ const slot = (appointment) => (
 const columns = (days, hour, appointments) => {
   const getDay = (day, index) => {
     const appointment = getAppointment(index, hour, appointments);
-    return (<td className={appointment ? 'appointment': null} key={day}>{appointment ? slot(appointment) : null}</td>)
+    return (<td className={appointment ? 'appointment' : null} key={day}>{appointment ? slot(appointment) : null}</td>)
   }
   return (
     <>
@@ -34,9 +35,7 @@ const rows = (days, hours, appointments) => hours.map(hour =>
 export const Timetable = (props) => {
   const { days, hours, appointments } = props
   return (
-    <div className='content'>
-      <h1>Mace Gyms</h1>
-      <h2>Time Table</h2>
+    <Page title="Mace Gyms Time Table">
       <table className="time-table">
         <thead>
           <tr>{columnHeaders(days)}</tr>
@@ -45,6 +44,6 @@ export const Timetable = (props) => {
           {rows(days, hours, appointments)}
         </tbody>
       </table>
-    </div>
+    </Page>
   )
 };
