@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "startTime": 7,
+        "day": 1,
+        "description": "Yoga",
+        "endTime": 8,
+        "attendees": [],
+        "instructor": "Maja"
+    },
+    {
+        "id": 1,
+        "startTime": 7,
+        "day": 0,
+        "description": "Yoga",
+        "endTime": 8,
+        "attendees": [],
+        "instructor": "Maja"
+    },
+    {
+        "id": 2,
+        "startTime": 9,
+        "day": 4,
+        "description": "Yoga",
+        "endTime": 11,
+        "attendees": [],
+        "instructor": "Maja"
+    },
+    {
+        "id": 3,
+        "startTime": 7,
+        "day": 3,
+        "description": "Boxing",
+        "endTime": 8,
+        "attendees": [],
+        "instructor": "Mace"
+    },
+    {
+        "id": 4,
+        "startTime": 12,
+        "day": 6,
+        "description": "Yogalaties",
+        "endTime": 14,
+        "attendees": [],
+        "instructor": "Pat"
+    },
+    {
+        "id": 5,
+        "startTime": 8,
+        "day": 2,
+        "description": "Spin",
+        "endTime": 9,
+        "attendees": [],
+        "instructor": "Bob"
+    },
+    {
+        "id": 6,
+        "startTime": 10,
+        "day": 5,
+        "description": "Zumba",
+        "endTime": 11.5,
+        "attendees": [],
+        "instructor": "Afreido"
+    },
+    {
+        "id": 7,
+        "startTime": 13,
+        "day": 6,
+        "description": "Yoga",
+        "endTime": 14,
+        "attendees": [],
+        "instructor": "Maja"
+    }
+]

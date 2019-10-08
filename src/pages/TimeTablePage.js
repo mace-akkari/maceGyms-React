@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getClasses } from './ExampleAPIData';
+import { getClasses } from './gymApi';
 import { Timetable } from './Timetable';
 
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];

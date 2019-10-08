@@ -13,6 +13,7 @@ const slot = (appointment) => (
     <h5>{appointment.description}</h5>
     <p>{`Instructor: ${appointment.instructor}`}</p>
     <p>{`Duration: ${appointment.endTime - appointment.startTime} hour(s)`}</p>
+    <p>{`Number of attendees: ${appointment.attendees.length}`}</p>
   </>
 )
 const columns = (days, hour, appointments) => {
